@@ -1,0 +1,38 @@
+@import "./base.css";
+
+.home .main__heading {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.home .main__sub-heading {
+  font-size: 2.5rem;
+}
+
+.button--primary {
+  background-color: var(--color-button-primary-bg);
+  color: var(--color-button-primary-text);
+}
+
+.button--secondary {
+  background-color: var(--color-button-secondary-bg);
+  color: var(--color-button-secondary-text);
+}
+
+.button:not(button:last-of-type) {
+  margin-inline-end: 1.25rem;
+}
+
+.button__icon {
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:focus {
+  outline: 2px solid var(--color-text-on-primary);
+}
+
+.button-container {
+  display: flex;
+  margin-top: 6.25rem;
+}
