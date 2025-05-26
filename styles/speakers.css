@@ -1,5 +1,13 @@
 @import "./base.css";
 
+.speakers .menu path {
+  fill: var(--color-primary);
+}
+
+.speakers .close path {
+  fill: var(--color-primary);
+}
+
 .speakers .main__title {
   font-size: 6.125rem;
 }
@@ -14,10 +22,6 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 200px;
   grid-row-gap: 120px;
-}
-
-.speaker__wrapper {
-  max-width: 460px;
 }
 
 .speaker__photo {
@@ -48,4 +52,16 @@
 .speaker__company,
 .speaker__bio {
   color: var(--color-text-default);
+}
+
+@media (width < 1000px) {
+  .speakers__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 840px) {
+  .nav {
+    background-color: var(--color-bg-secondary);
+  }
 }

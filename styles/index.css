@@ -9,30 +9,26 @@
   font-size: 2.5rem;
 }
 
-.button--primary {
-  background-color: var(--color-button-primary-bg);
-  color: var(--color-button-primary-text);
+.home .menu path {
+  fill: var(--color-secondary);
 }
 
-.button--secondary {
-  background-color: var(--color-button-secondary-bg);
-  color: var(--color-button-secondary-text);
+.home .close path {
+  fill: var(--color-secondary);
 }
 
-.button:not(button:last-of-type) {
-  margin-inline-end: 1.25rem;
+@media (max-width: 1200px) {
+  .home .main__heading {
+    font-size: 4.375rem;
+  }
 }
 
-.button__icon {
-  vertical-align: middle;
-}
+@media (max-width: 590px) {
+  .home .main__heading {
+    font-size: 2.5rem;
+  }
 
-.button:hover,
-.button:focus {
-  outline: 2px solid var(--color-text-on-primary);
-}
-
-.button-container {
-  display: flex;
-  margin-top: 6.25rem;
+  .home .main__sub-heading {
+    font-size: 1.5rem;
+  }
 }
